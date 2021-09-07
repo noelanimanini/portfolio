@@ -1,18 +1,13 @@
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import TechStack from "./components/TechStack/TechStack";
-import Contact from "./components/Contact/Contact";
+import Landing from "../src/components/Landing/Landing";
+import Face from "../src/components/Face/Face";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="fixedFace">STICKY FACE</div>
-      <div>
-        <About />
-        <TechStack />
-        <Projects />
-        <Contact />
+      <div className="fixedFace">
+        <Face />
+        <Landing />
       </div>
     </div>
   );

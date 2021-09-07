@@ -1,3 +1,34 @@
 .aboutParent {
   border-style: solid;
+  color: white;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+}
+
+.aboutSquare {
+  border-style: solid;
+  color: white;
+  width: 15vw;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.aboutSquare span {
+  width: 25vw;
+}
+
+.aboutBox {
+  border-style: solid;
+  color: orange;
+  overflow: auto;
+  width: 35vw;
+  height: 20vh;
+  margin: 5%;
+  text-align: left;
+  text-indent: 2em;
+  padding: 2%;
 }
