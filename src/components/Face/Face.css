@@ -1,0 +1,47 @@
+.faceParent {
+  width: 50%;
+  background: linear-gradient(#000b46, #280d2d, #38203d);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faceBoxParent {
+  border-style: solid;
+  color: orange;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.faceBox {
+  border-style: solid;
+  color: white;
+  width: 35%;
+}
+
+.faceImage {
+  width: 100%;
+}
+
+.space {
+  padding: 0.5vw;
+}
+
+.faceName {
+  border-style: solid;
+  color: white;
+  font-size: 2vw;
+  width: 50%;
+}
+
+.faceIcons {
+  border-style: solid;
+  color: white;
+  overflow: scroll;
+  /* height: 70vh; */
+}
