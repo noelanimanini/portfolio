@@ -39,7 +39,7 @@ function TechStack() {
       />
       <div className="parentStack">
         <div className="Box">Helo</div>
-        <div className="techstackP9arent">
+        <div className="techstackParent">
           <div className="container">
             <div className="topDog">
               <div className="raise">

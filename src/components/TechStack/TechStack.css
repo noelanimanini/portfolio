@@ -1,9 +1,16 @@
 .techstackParent {
   border-style: solid;
   color: orange;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .parentStack {
   display: flex;
+  border-style: solid;
+  color: white;
+  justify-content: space-between;
 }
 .Box {
   color: white;
@@ -19,9 +26,13 @@
 
 .topDog {
   display: grid;
-  grid-template-columns: 8ch auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
   grid-gap: 0.5rem;
-
+  /* display: grid;
+  grid-template-columns: 8ch auto;
+  grid-gap: 0.5rem; */
+  /* height: calc(100vh - 10px); */
   /* align-items: end; */
   /* z-index: 1;
   display: flex;
@@ -34,12 +45,12 @@
 .raise {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-style: solid;
   max-width: 5vw;
   min-width: 5vw;
-  /* max-height: 5vw; */
+  max-height: 5vw;
   min-height: 5vw;
 }
 
@@ -116,7 +127,6 @@
   width: 4vw;
   height: 4vw;
   color: #fff;
-
   transition: transform 250ms;
 }
 
