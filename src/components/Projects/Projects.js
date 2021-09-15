@@ -1,6 +1,8 @@
 import React from "react";
 import "./Projects.css";
-import horizontalLine from "../images/Group 30.png";
+import potential from "../images/Group 32.png";
+import data from "../Data";
+import horizontalLine from "../images/Group 33.png";
 
 function Projects() {
   return (
@@ -10,6 +12,24 @@ function Projects() {
         alt="horizontalLine"
         className="horizontalLine"
       />
+      <div>
+        {data.map((x) => (
+          <div>
+            <div key={x.name} className="projectOverlayParent">
+              <div className="shadow">
+                {" "}
+                {console.log(x.technologies.javascript)}{" "}
+              </div>
+              <div className="projectImageOverlay">
+                {x.name === "Potential" ? (
+                  <img src={potential} alt="potentialimage" />
+                ) : null}
+                <div>{x.description}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

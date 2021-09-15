@@ -1,36 +1,183 @@
 .aboutParent {
-  border-style: solid;
+  /* border-style: solid; */
   color: white;
   display: flex;
+
   width: 100%;
-  margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutParent {
+    /* border-style: solid; */
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .aboutColumn {
+    border-style: solid;
+    background: url(../images/akira.gif);
+    color: orange;
+    margin: 10px;
+    max-width: 2000px;
+    border-width: 1px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutSquare {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutSquare span {
+    font-family: "Roboto Mono", monospace;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutBox {
+    background: url(../images/bladerunner.gif);
+    border-style: solid;
+    border-width: 1px;
+    overflow: auto;
+    font-family: "Roboto Mono", monospace;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+    text-indent: 2em;
+    padding: 2%;
+    margin: 0 auto;
+  }
+  .aboutBox div {
+    border-style: solid;
+    color: white;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(2, 16, 28, 0.75);
+    padding: 10px;
+    overflow: scroll;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .aboutSquare {
+  .aboutColumn {
     border-style: solid;
+    color: orange;
+    /* background: url(../images/akira.gif); */
+    /* background-size: cover; */
+    margin: 10px;
+    border-width: 1px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutSquare {
+    margin: 10px;
+  }
+
+  .aboutSquare span {
+    border-style: solid;
+    border-width: 1px;
     color: white;
     width: 150px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
   }
 
-  .aboutSquare span {
-    width: 25vw;
+  .glitch {
     font-family: "Roboto Mono", monospace;
+    font-size: 2vw;
+    text-shadow: 0.05em 0 0 rgba(225, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 225, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 225, 0.75);
+    animation: stuff 750ms infinite;
+  }
+
+  @keyframes stuff {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(225, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 225, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 225, 0.75);
+    }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(225, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 225, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 0, 225, 0.75);
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(225, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 225, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 225, 0.75);
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(225, 0, 0, 0.75),
+        0.025em 0.025em 0 rgba(0, 225, 0, 0.75),
+        -0.05em -0.05em 0 rgba(0, 0, 225, 0.75);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(225, 0, 0, 0.75),
+        0 0.05em 0 0 rgba(0, 225, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 225, 0.75);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(225, 0, 0, 0.75),
+        0 0.05em 0 0 rgba(0, 225, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 225, 0.75);
+    }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(225, 0, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 225, 0, 0.75),
+        -0.025em -0.05em 0 rgba(0, 0, 225, 0.75);
+    }
+  }
+  .aboutSquare img {
+    max-width: 150px;
+    margin: 0 auto;
+    padding-top: 10px;
   }
 
   .aboutBox {
+    background: url(../images/bladerunner.gif);
     border-style: solid;
+    border-width: 1px;
     overflow: auto;
     font-family: "Roboto Mono", monospace;
-    max-height: 50px;
-    margin: 5%;
+    height: 200px;
+    width: 1000px;
+    margin: 10px;
     text-align: left;
     text-indent: 2em;
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutBox div {
+    border-style: solid;
+    color: white;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(2, 16, 28, 0.75);
+    padding: 10px;
+    /* overflow: scroll; */
   }
 }
