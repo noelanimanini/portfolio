@@ -1,32 +1,14 @@
 import React from "react";
 import horizontalLine from "../images/Group 29.png";
-import {
-  AiOutlineHtml5,
-  AiOutlineConsoleSql,
-  AiFillGithub,
-} from "react-icons/ai";
-import {
-  DiCss3,
-  DiReact,
-  DiJavascript1,
-  DiRuby,
-  DiPostgresql,
-} from "react-icons/di";
-import { SiMaterialUi, SiHeroku } from "react-icons/si";
-import { BsBootstrap } from "react-icons/bs";
-import { FiFigma } from "react-icons/fi";
-import { ImStack } from "react-icons/im";
-import { FaAws } from "react-icons/fa";
-// import {
-//   DiHeroku,
-//   DiJavascript1,
-//   DiRuby,
-//   DiDatabase,
-//   DiCss3,
-// } from "react-icons/di";
-// import { FaAws, FaReact } from "react-icons/fa";
-// import { SiRails, SiMaterialUi, SiPostgresql, SiHtml5 } from "react-icons/si";
-// import { BsBootstrapFill } from "react-icons/bs";
+import aws from "../SVG/aws.png";
+import react from "../SVG/react.png";
+import html from "../SVG/html.png";
+import js from "../SVG/js.png";
+import postgresql from "../SVG/postgres.png";
+import rails from "../SVG/rails.png";
+import heroku from "../SVG/heroku.png";
+import ruby from "../SVG/ruby.png";
+import sql from "../SVG/sql.png";
 import "./TechStack.css";
 
 function TechStack() {
@@ -37,103 +19,73 @@ function TechStack() {
         alt="horizontalLine"
         className="horizontalLine"
       />
-      <div className="parentStack">
-        <div className="Box">Helo</div>
-        <div className="techstackParent">
-          <div className="container">
-            <div className="topDog">
-              <div className="raise">
-                <DiJavascript1 className="icon2" />
-                <div className="bar front expert" data-skill="Javascript"></div>
-                <div className="JS">Javascript</div>
-              </div>
-              <div className="raise">
-                <DiReact className="icon2" />
-                <div className="bar front expert" data-skill="React"></div>
-                <div className="react"> React</div>
-              </div>
+      <div className="container">
+        <ul>
+          <li className="aws">
+            <img src={aws} alt="aws" />
 
-              <div className="raise">
-                <DiRuby className="icon2" />
-                <div className="bar front expert" data-skill="Ruby"></div>
-                <div className="ruby">Ruby</div>
-              </div>
-              <div className="raise">
-                <AiOutlineConsoleSql className="icon2" />
-                <div className="bar front expert" data-skill="SQL"></div>
-                <div className="sql">SQL</div>
-              </div>
-              <div className="raise">
-                <ImStack className="icon2" />
-                <div className="bar front expert" data-skill="noSQL"></div>
-                <div className="noSQL">noSQL</div>
-              </div>
-              <div className="raise">
-                <SiMaterialUi className="icon2" />
-                <div
-                  className="bar front expert"
-                  data-skill="Material UI"
-                ></div>
-                <div className="material">Material UI</div>
-              </div>
-              <div className="raise">
-                <FiFigma className="icon2" />
-                <div
-                  className="bar front intermediate"
-                  data-skill="Figma"
-                ></div>
-                <div className="figma">Figma</div>
-              </div>
-              <div className="raise">
-                <DiCss3 className="icon2" />
-                <div className="bar front expert" data-skill="CSS3"></div>
-                <div className="css3">CSS3</div>
-              </div>
-              <div className="raise">
-                <AiFillGithub className="icon2" />
-                <div className="bar front expert" data-skill="html5"></div>
-                <div className="html5">Github</div>
-              </div>
-              <div className="raise">
-                <AiOutlineHtml5 className="icon2" />
-                <div className="bar front expert" data-skill="html5"></div>
-                <div className="html5">HTML5</div>
-              </div>
-              <div className="raise">
-                <BsBootstrap className="icon2" />
-                <div
-                  className="bar front intermediate"
-                  data-skill="bootstrap"
-                ></div>
-                <div className="bootstrap">Bootstrap</div>
-              </div>
-              <div className="raise">
-                <SiHeroku className="icon2" />
-                <div
-                  className="bar front intermediate"
-                  data-skill="heroku"
-                ></div>
-                <div className="heroku">Heroku</div>
-              </div>
-              <div className="raise">
-                <FaAws className="icon2" />
-                <div
-                  className="bar front intermediate"
-                  data-skill="heroku"
-                ></div>
-                <div className="heroku">AWS</div>
-              </div>
-              <div className="raise">
-                <DiPostgresql className="icon2" />
-                <div
-                  className="bar front intermediate"
-                  data-skill="heroku"
-                ></div>
-                <div className="heroku">Postgresql</div>
-              </div>
+            <div className="hero-info">
+              <p>AWS</p>
             </div>
-          </div>
-        </div>
+          </li>
+          <li className="react">
+            <img src={react} alt="react" />
+
+            <div className="hero-info">
+              <p>React</p>
+            </div>
+          </li>
+          <li className="heroku">
+            <img src={heroku} alt="heroku" />
+
+            <div className="hero-info">
+              <p>heroku</p>
+            </div>
+          </li>
+          <li className="ana">
+            <img src={html} alt="html" />
+
+            <div className="hero-info">
+              <p>html</p>
+            </div>
+          </li>
+          <li className="ana">
+            <img src={js} alt="js" />
+
+            <div className="hero-info">
+              <p>Javascript</p>
+            </div>
+          </li>
+          <li className="ana">
+            <img src={ruby} alt="ruby" />
+
+            <div className="hero-info">
+              <p>ruby</p>
+            </div>
+          </li>
+          <li className="ana">
+            <img src={postgresql} alt="postgresql" />
+
+            <div className="hero-info">
+              <p>postgresql</p>
+            </div>
+          </li>
+          <li className="ana">
+            <img src={sql} alt="sql" />
+
+            <div className="hero-info">
+              <p>sql</p>
+            </div>
+          </li>
+
+          <li className="ana">
+            <img src={rails} alt="rails" />
+
+            <div className="hero-info">
+              <p>rails</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   );

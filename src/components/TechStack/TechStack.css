@@ -1,179 +1,69 @@
-.techstackParent {
-  border-style: solid;
-  color: orange;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.parentStack {
-  display: flex;
-  border-style: solid;
-  color: white;
-  justify-content: space-between;
-}
-.Box {
-  color: white;
-}
 .horizontalLine {
   width: 90%;
 }
 .container {
-  /* width: ; */
-  /* z-index: 1; */
-  display: -moz-inline-box;
-}
-
-.topDog {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr auto;
-  grid-gap: 0.5rem;
-  /* display: grid;
-  grid-template-columns: 8ch auto;
-  grid-gap: 0.5rem; */
-  /* height: calc(100vh - 10px); */
-  /* align-items: end; */
-  /* z-index: 1;
-  display: flex;
-  padding: 1vw;
-  width: 50%;
+  max-width: 1350px;
   margin: 0 auto;
+  padding: 10px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; */
-}
-.raise {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-style: solid;
-  max-width: 5vw;
-  min-width: 5vw;
-  max-height: 5vw;
-  min-height: 5vw;
+  justify-content: center;
 }
 
-.JS,
-.react,
-.css3,
-.html5,
-.ruby,
-.sql,
-.noSQL,
-.material,
-.figma,
-.bootstrap,
-.heroku {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-/* 
-.icon2:hover ~ .JS,
-.icon2:hover ~ .react,
-.icon2:hover ~ .css3,
-.icon2:hover ~ .html5,
-.icon2:hover ~ .ruby,
-.icon2:hover ~ .sql,
-.icon2:hover ~ .noSQL,
-.icon2:hover ~ .material,
-.icon2:hover ~ .figma {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-}
-.icon2:hover {
-  color: #f8edeb;
-  transform: translateY(-10px);
-  text-shadow: 3px 6px white;
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 2px;
+  border: 3px solid rgba(76, 201, 240, 1);
+  border-radius: 10px;
+  width: 80px;
+  height: 100px;
+  background: linear-gradient(#023964, #047bbf, #6ec3f1);
+  text-align: center;
+  text-transform: uppercase;
+  transform: scale3d(1, 1, 1) skewX(-10deg);
+  overflow: hidden;
+  filter: drop-shadow(0 1px 4px rgba(10, 2, 12, 0.2));
+  transition: 70ms 20ms ease;
 }
 
-.icon3:hover {
-  color: #f8edeb;
-  transform: translateY(-10px);
-  text-shadow: 3px 6px white;
-}
-
-.icon3:hover ~ .bootstrap,
-.icon3:hover ~ .heroku {
-  visibility: visible;
-  opacity: 1;
+ul li:hover {
+  border-color: gold;
+  transform: scale3d(1.18, 1.18, 1) skewX(-10deg);
   z-index: 1;
 }
 
-@keyframes load {
-  from {
-    width: 0%;
-  }
-}
-@-webkit-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-@-moz-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-@-o-keyframes load {
-  from {
-    width: 0%;
-  }
-} */
-.icon2 {
-  z-index: 2;
-  width: 4vw;
-  height: 4vw;
-  color: #fff;
-  transition: transform 250ms;
+ul li img {
+  width: 65%;
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
+  transform: translateZ(0) skewX(10deg);
 }
 
-.bar {
-  background-color: #e2f8ff;
-  padding: 0.15vw;
-  /* border-radius: 2vw; */
-  margin-top: 0.2vw;
-  min-width: 4vw;
-  max-width: 5vw;
-  /* color: #fff; */
-}
-.bar::before {
-  content: "";
-  display: flex;
-  padding: 0.2vw 0 0.2vw 0.05vw;
-  border-radius: inherit;
-  animation: load 4s 0s;
-  -webkit-animation: load 4s 0s;
-  -moz-animation: load 4s 0s;
-  -o-animation: load 4s 0s;
+.hero-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: linear-gradient(#f72585, #b5179e, #6ec3f1);
 }
 
-.bar.front::before {
-  border: lightslategrey;
-  min-wodth: 4vw;
-  max-width: 5vw;
-  background-color: #b5179e;
-}
-.bar.back::before {
-  /* background-color: #e56b6f; */
-  min-wodth: 4vw;
-  max-width: 5vw;
+.hero-info p {
+  transform: translateZ(0) skewX(10deg);
+  font-style: oblique;
+  font-size: 12px;
+  font-weight: 700i;
+  word-wrap: break-word;
+  color: white;
 }
 
-.bar.learning::before {
-  width: calc(20% - 1vw);
-}
-.bar.basic::before {
-  width: calc(40% - 1vw);
-}
-.bar.intermediate::before {
-  width: calc(60%);
-}
-.bar.advanced::before {
-  width: calc(90% - 1vw);
-}
-.bar.expert::before {
-  width: calc(100%);
+#images {
+  text-align: center;
 }

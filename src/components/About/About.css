@@ -6,29 +6,31 @@
   margin-left: auto;
 }
 
-.aboutSquare {
-  border-style: solid;
-  color: white;
-  width: 15vw;
-  height: 15vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5%;
-}
+@media only screen and (min-width: 768px) {
+  .aboutSquare {
+    border-style: solid;
+    color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
 
-.aboutSquare span {
-  width: 25vw;
-}
+  .aboutSquare span {
+    width: 25vw;
+    font-family: "Roboto Mono", monospace;
+  }
 
-.aboutBox {
-  border-style: solid;
-  color: orange;
-  overflow: auto;
-  width: 35vw;
-  height: 20vh;
-  margin: 5%;
-  text-align: left;
-  text-indent: 2em;
-  padding: 2%;
+  .aboutBox {
+    border-style: solid;
+    overflow: auto;
+    font-family: "Roboto Mono", monospace;
+    max-height: 50px;
+    margin: 5%;
+    text-align: left;
+    text-indent: 2em;
+    padding: 2%;
+  }
 }
