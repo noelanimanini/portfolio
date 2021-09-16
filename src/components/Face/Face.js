@@ -6,7 +6,7 @@ import face from "../images/face2.jpg";
 function Face() {
   return (
     <div className="faceParent">
-      <h1 className="cyberpunk glitched">Crystal</h1>
+      {/* <h1 className="cyberpunk glitched">Crystal</h1> */}
       <div class="hexa">
         <div class="hex1">
           <div class="hex2">
