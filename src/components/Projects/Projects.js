@@ -16,16 +16,16 @@ function Projects() {
           <div>
             <div className="projectName">
               {x.name}
-              {/* {x.awards ? (
+              {x.awards ? (
                 <div className="jackpot">HACKATHON WINNER</div>
-              ) : null} */}
+              ) : null}
             </div>
             <div key={x.name} className="projectOverlayParent">
               <div className="shadow">
                 <div className="technologies">
-                  {/* {Object.values(x["technologies"][0]).map((x) => (
+                  {Object.values(x["technologies"][0]).map((x) => (
                     <p> {x}</p>
-                  ))} */}
+                  ))}
                 </div>
 
                 <div className="links">

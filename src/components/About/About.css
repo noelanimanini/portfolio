@@ -90,14 +90,15 @@
   }
   .aboutSquare {
     margin: 10px;
-    background: url(../images/akira.gif);
-    background-size: cover;
+
+    /* background: url(../images/akira.gif);
+    background-size: cover; */
   }
 
   .aboutSquare span {
     border-style: solid;
     border-width: 1px;
-    color: black;
+    color: white;
     font-size: 3vw;
     width: 150px;
     height: 150px;
