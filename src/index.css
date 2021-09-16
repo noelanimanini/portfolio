@@ -29,8 +29,8 @@ body::-webkit-scrollbar-thumb {
   font-family: "Roboto Mono", monospace;
   width: 95%;
   padding-left: 1vw;
-  padding-bottom: 1vw;
-  padding-top: 2vw;
+  padding-bottom: 3vw;
+  padding-top: 3vw;
 }
 .horizontalStyle div {
   width: 75%;

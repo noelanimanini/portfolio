@@ -15,11 +15,11 @@ import "./TechStack.css";
 function TechStack() {
   return (
     <div>
-      <img
-        src={horizontalLine}
-        alt="horizontalLine"
-        className="horizontalLine"
-      />
+      <div className="horizontalStyle">
+        techstack
+        <div></div>
+        001
+      </div>
       <div className="container">
         <ul>
           <li className="aws">
