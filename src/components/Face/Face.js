@@ -1,5 +1,6 @@
 import React from "react";
 import "./Face.css";
+import resume from "../images/Crystal_Villanueva_resume.pdf";
 import face from "../images/face2.jpg";
 
 function Face() {
@@ -15,7 +16,6 @@ function Face() {
       </div>
       <div className="contactInfo">
         <div className="contactLine">
-          {/* <div></div> */}
           <div>email</div>
           <div>linkedin</div>
           <div>medium</div>

@@ -10,21 +10,20 @@
   );
 }
 .contactInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  float: left;
+  padding-left: 1vw;
 }
 .contactLine {
   text-transform: uppercase;
-  border-style: solid;
   color: white;
   font-family: "Roboto Mono", monospace;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  float: left;
   width: 50%;
+}
+.contactLine div {
+  border-bottom: 1px solid;
+  position: relative;
+  width: 300px;
 }
 
 .hexa,
