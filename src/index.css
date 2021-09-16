@@ -21,7 +21,19 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 
-.horizontalLine {
-  width: 90%;
-  padding: 2vw;
+.horizontalStyle {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  width: 95%;
+  padding-left: 1vw;
+  padding-bottom: 1vw;
+  padding-top: 2vw;
+}
+.horizontalStyle div {
+  width: 75%;
+  background-color: #ffff;
+  height: 1px;
 }

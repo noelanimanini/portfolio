@@ -8,6 +8,7 @@ import postgresql from "../SVG/postgres.png";
 import rails from "../SVG/rails.png";
 import heroku from "../SVG/heroku.png";
 import ruby from "../SVG/ruby.png";
+import css from "../SVG/css.png";
 import sql from "../SVG/sql.png";
 import "./TechStack.css";
 
@@ -26,6 +27,13 @@ function TechStack() {
 
             <div className="hero-info">
               <p>AWS</p>
+            </div>
+          </li>
+          <li className="css">
+            <img src={css} alt="css" />
+
+            <div className="hero-info">
+              <p>CSS</p>
             </div>
           </li>
           <li className="react">

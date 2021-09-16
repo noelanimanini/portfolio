@@ -6,11 +6,11 @@ import horizontalLine from "../images/Group 33.png";
 function Projects() {
   return (
     <div className="projectParent">
-      <img
-        src={horizontalLine}
-        alt="horizontalLine"
-        className="horizontalLine"
-      />
+      <div className="horizontalStyle">
+        projects
+        <div></div>
+        002
+      </div>
       <div>
         {data.map((x) => (
           <div>
@@ -53,7 +53,10 @@ function Projects() {
               </div>
             </div>
             {x.div ? (
-              <img src={x.div} alt={x.div} className="horizontalLine" />
+              <div className="horizontalStyle">
+                <div></div>
+                {x.div}
+              </div>
             ) : null}
           </div>
         ))}

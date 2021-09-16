@@ -22,7 +22,11 @@ ul li {
   border-radius: 10px;
   width: 80px;
   height: 100px;
-  background: linear-gradient(#023964, #047bbf, #6ec3f1);
+  background: linear-gradient(
+    rgba(110, 195, 241, 1),
+    rgba(4, 123, 191, 0.75),
+    rgba(2, 57, 100, 0.5)
+  );
   text-align: center;
   text-transform: uppercase;
   transform: scale3d(1, 1, 1) skewX(-10deg);
@@ -32,7 +36,7 @@ ul li {
 }
 
 ul li:hover {
-  border-color: gold;
+  border-color: rgba(247, 37, 133, 1);
   transform: scale3d(1.18, 1.18, 1) skewX(-10deg);
   z-index: 1;
 }

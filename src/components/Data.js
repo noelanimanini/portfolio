@@ -33,7 +33,7 @@ const projects = [
           "https://www.youtube.com/watch?v=AvIr5lI6rSE&t=22s&ab_channel=crystalvillanueva",
       },
     ],
-    div: div2,
+    div: "00A",
   },
 
   {
@@ -63,7 +63,7 @@ const projects = [
           "https://www.youtube.com/watch?v=C9wP7TfajJY&t=7s&ab_channel=crystalvillanueva",
       },
     ],
-    div: div3,
+    div: "00B",
   },
   {
     name: "COVID SafeGuard",
@@ -96,7 +96,7 @@ const projects = [
         award: "Winner",
       },
     ],
-    div: div4,
+    div: "00C",
   },
   {
     name: "StudyBuddy.tech",
@@ -128,7 +128,7 @@ const projects = [
         award: "Winner",
       },
     ],
-    div: div5,
+    div: "00D",
   },
   {
     name: "Notelify",
@@ -157,7 +157,7 @@ const projects = [
           "https://www.youtube.com/watch?v=vwkdQGorwys&feature=youtu.be&ab_channel=crystalvillanueva",
       },
     ],
-    div: div6,
+    div: "00E",
   },
   {
     name: "BookStore CLI",
@@ -178,7 +178,7 @@ const projects = [
         git: "https://github.com/noelanimanini/ruby-project-alt-guidelines",
       },
     ],
-    div: div7,
+    div: "00F",
   },
   {
     name: "RANDORECIPE",
@@ -202,7 +202,7 @@ const projects = [
         demo: "https://noelanimanini.github.io/recipe/",
       },
     ],
-    div: div8,
+    div: "00G",
   },
   {
     name: "Digi-Clusive",
