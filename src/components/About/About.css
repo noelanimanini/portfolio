@@ -16,11 +16,13 @@
   }
   .aboutColumn {
     border-style: solid;
+    /* background: url(../images/bladerunner.gif);
+    background-size: cover; */
     color: orange;
     margin: 10px;
-    max-width: 2000px;
     border-width: 1px;
-    height: 72px;
+    width: 90%;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +85,8 @@
     color: orange;
     margin: 10px;
     border-width: 1px;
-    height: 70px;
+    width: 90%;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;

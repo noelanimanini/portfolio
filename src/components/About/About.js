@@ -1,4 +1,5 @@
 import React from "react";
+import statue from "../images/statue.jpg";
 import "./About.css";
 
 function About() {
@@ -8,7 +9,8 @@ function About() {
         <div className="aboutSquare">
           <span className="glitch">ABOUT</span>
         </div>
-        <div className="aboutColumn">hello</div>
+
+        <img src={statue} className="aboutColumn" />
       </div>
       <div className="aboutBox">
         <div>
