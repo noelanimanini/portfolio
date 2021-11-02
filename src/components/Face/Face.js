@@ -10,10 +10,31 @@ function Face() {
         <img src={face} alt="face" className="face" />
       </div>
       <div className="contactInfo">
-        <div>email</div>
-        <div>linkedin</div>
-        <div>medium</div>
-        <div>resume</div>
+        <a
+          className="button"
+          href="mailto:noelani.villanueva@gmail.com?subject = Feedback&body = Message"
+        >
+          {" "}
+          Email{" "}
+        </a>
+        <a
+          className="button"
+          href="https://www.linkedin.com/in/crystal-villanueva-151353145/"
+        >
+          Linkedin
+        </a>
+        <a
+          className="button"
+          href="https://crystal-villanueva.medium.com/?source=your_stories_page-------------------------------------"
+          target="_blank"
+        >
+          Medium
+        </a>
+
+        <a className="button" href={resume} download>
+          {" "}
+          Resume
+        </a>
       </div>
     </div>
   );

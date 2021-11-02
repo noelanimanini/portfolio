@@ -2,6 +2,7 @@
   .faceParent {
     width: 20%;
     background-color: #010b46;
+    font-family: "Roboto Mono", monospace;
   }
 
   .face {
@@ -11,5 +12,18 @@
 
   .contactInfo {
     color: white;
+    display: flex;
+    flex-direction: column;
+    /* width: 70%; */
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    text-decoration: none;
+    color: white;
+  }
+  .button:hover {
+    color: pink;
   }
 }
