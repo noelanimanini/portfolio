@@ -1,12 +1,12 @@
 @media only screen and (min-width: 768px) {
   .faceParent {
-    width: 20%;
-    background-color: #010b46;
+    width: 30%;
+
     font-family: "Roboto Mono", monospace;
   }
 
   .face {
-    width: 70%;
+    width: 65%;
     padding: 10%;
   }
 
