@@ -8,10 +8,36 @@ import "./Landing.css";
 function Landing() {
   return (
     <div className="landing">
-      <About />
-      <TechStack />
-      <Projects />
-      <Contact />
+      <div className="faceBody">
+        <figure>
+          <div className="stripes-wraper">
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+            <div className="stripe"></div>
+          </div>
+          <div class="gradient-mask"></div>
+          <div class="palm-tree"></div>
+        </figure>
+      </div>
+      <div>
+        <About />
+        <TechStack />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }

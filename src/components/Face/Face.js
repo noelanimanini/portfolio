@@ -6,30 +6,6 @@ import face from "../images/face2.jpg";
 function Face() {
   return (
     <div className="faceParent">
-      <div className="faceBody">
-        <figure>
-          <div className="stripes-wraper">
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div class="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-            <div className="stripe"></div>
-          </div>
-          <div class="gradient-mask"></div>
-          <div class="palm-tree"></div>
-        </figure>
-      </div>
       <div class="facebox">
         <img src={face} alt="face" className="face" />
 
