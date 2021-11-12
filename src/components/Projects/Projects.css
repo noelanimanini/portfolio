@@ -14,16 +14,21 @@
 
   .jackpot {
     padding-left: 2vw;
-    animation: jackpots 1s 0s ease infinite;
-    -moz-animation: jackpots 1s 0s ease infinite;
+    /* animation: jackpots 1s 0s ease infinite; */
+    /* -moz-animation: jackpots 1s 0s ease infinite; */
     /* Firefox */
-    -webkit-animation: jackpots 1s 0s ease infinite;
+    /* -webkit-animation: jackpots 1s 0s ease infinite; */
     /* Safari and Chrome */
-    -o-animation: jackpots 1s 0s ease infinite;
+    /* -o-animation: jackpots 1s 0s ease infinite; */
     /* Opera */
+    text-shadow: -0.1vw 0vw 0.1vw #fed128, -0.15vw 0vw 0.2vw #fed128,
+      -0.2vw 0vw 0.2vw #fed128, -0.1vw 0vw 3vw #f0130b, -0.2vw 0vw 3vw #f0130b,
+      -0.4vw 0vw 3vw #f0130b, -0.1vw 0vw 5vw #f0130b, -0.2vw 0vw 5vw #f0130b,
+      -0.4vw 0vw 0.8vw #f0130b, 0.2vw 0vw 10vw #f0130b;
+    color: #fed128;
   }
 
-  @keyframes jackpots {
+  /* @keyframes jackpots {
     0%,
     100% {
       text-shadow: -0.1vw 0vw 0.1vw #fed128, -0.15vw 0vw 0.2vw #fed128,
@@ -40,7 +45,7 @@
         -0.4vw 0vw 0.2vw #5c0704, 0.2vw 0vw 0.5vw #5c0704;
       color: #705c12;
     }
-  }
+  } */
 
   .projectImageOverlay {
     width: 100%;
@@ -49,13 +54,15 @@
     position: relative;
   }
   .projectImageOverlay div {
-    padding-top: 10px;
+    font-weight: bold;
+    background: rgb(0, 0, 0, 0.8);
+    height: 45vh;
   }
   .projectOverlayParent {
     position: relative;
   }
   .shadow {
-    color: white;
+    color: orange;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -112,7 +119,7 @@
   .projectImageOverlay img {
     /* max-width: ; */
     min-width: 350px;
-    max-height: 150px;
+    height: 200px;
   }
 
   .projectImageOverlay div {
@@ -127,29 +134,35 @@
 
 @media only screen and (max-width: 768px) {
   .projectParent {
-    border-style: solid;
-    color: purple;
+    /* border-style: solid;
+    color: purple; */
   }
   .projectName {
     text-transform: uppercase;
     color: white;
     font-family: "Roboto Mono", monospace;
-    display: inline-block;
-    font-size: 4vw;
+    display: flex;
+    padding-left: 1vw;
+    font-size: 2vw;
   }
 
   .jackpot {
     padding-left: 2vw;
-    animation: jackpots 1s 0s ease infinite;
-    -moz-animation: jackpots 1s 0s ease infinite;
+    /* animation: jackpots 1s 0s ease infinite; */
+    /* -moz-animation: jackpots 1s 0s ease infinite; */
     /* Firefox */
-    -webkit-animation: jackpots 1s 0s ease infinite;
+    /* -webkit-animation: jackpots 1s 0s ease infinite; */
     /* Safari and Chrome */
-    -o-animation: jackpots 1s 0s ease infinite;
+    /* -o-animation: jackpots 1s 0s ease infinite; */
     /* Opera */
+    text-shadow: -0.1vw 0vw 0.1vw #fed128, -0.15vw 0vw 0.2vw #fed128,
+      -0.2vw 0vw 0.2vw #fed128, -0.1vw 0vw 3vw #f0130b, -0.2vw 0vw 3vw #f0130b,
+      -0.4vw 0vw 3vw #f0130b, -0.1vw 0vw 5vw #f0130b, -0.2vw 0vw 5vw #f0130b,
+      -0.4vw 0vw 0.8vw #f0130b, 0.2vw 0vw 10vw #f0130b;
+    color: #fed128;
   }
 
-  @keyframes jackpots {
+  /* @keyframes jackpots {
     0%,
     100% {
       text-shadow: -0.1vw 0vw 0.1vw #fed128, -0.15vw 0vw 0.2vw #fed128,
@@ -166,49 +179,58 @@
         -0.4vw 0vw 0.2vw #5c0704, 0.2vw 0vw 0.5vw #5c0704;
       color: #705c12;
     }
-  }
+  } */
 
   .projectImageOverlay {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     position: relative;
   }
   .projectImageOverlay div {
-    padding-top: 10px;
+    font-weight: bold;
+    background: rgb(0, 0, 0, 0.8);
+    height: 45vh;
+  }
+  .projectOverlayParent {
+    position: relative;
   }
   .shadow {
-    color: white;
-    width: 66vw;
+    color: orange;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
     height: 70px;
     background: rgb(0, 0, 0, 0.8);
   }
   .technologies {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    /* margin: 0 0 0 auto; */
-    /* width: 65%; */
+    margin: 0 0 0 auto;
+    width: 65%;
   }
   .technologies p {
     text-transform: uppercase;
-    font-size: 1.5vw;
+    font-size: 0.75vw;
     border-style: solid;
     border-width: 1px;
     padding: 0.5vw;
+    position: relative;
+    z-index: 1;
   }
   .links {
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    padding-left: 10px;
-    margin: 0 auto;
+    /* align-items: baseline; */
+    width: 20%;
+    padding-left: 2vw;
   }
   .links a {
     color: white;
     display: flex;
     justify-content: space-between;
     border-style: solid;
+    background: rgb(0, 0, 0, 0.8);
     border-width: 1px;
     transform: skew(-20deg);
     padding: 0.5vw;
@@ -229,15 +251,17 @@
   }
 
   .projectImageOverlay img {
-    width: 100%;
+    /* max-width: ; */
+    min-width: 350px;
+    height: 200px;
   }
 
   .projectImageOverlay div {
     color: white;
     font-family: "Roboto Mono", monospace;
     text-align: left;
-    padding: 2px;
+    padding: 1vw;
     overflow: auto;
-    height: 75px;
+    height: 70px;
   }
 }

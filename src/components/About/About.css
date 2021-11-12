@@ -162,7 +162,8 @@
 
   .aboutBox {
     background: url(../images/bladerunner.gif);
-    /* border-style: solid; */
+    border-style: solid;
+    color: white;
     border-width: 1px;
     overflow: auto;
     font-family: "Roboto Mono", monospace;
